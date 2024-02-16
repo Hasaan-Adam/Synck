@@ -1,0 +1,30 @@
+/* ----------------------------------
+Main Font    : DM Sans
+Main Color   : #F3F6FD;
+-------------------------------------
+
+>>> Typography:
+================
+
+Body copy:    18px 'DM Sans', sans-serif
+Header:     36px 'Yantramanav', sans-serif
+Input, textarea:  10px 'Syne', sans-serif
+
+*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Syne:wght@400..800&family=Yantramanav:wght@100;300;400;500;700;900&display=swap');
+
+/* Varialbes */
+:root {
+  --dark1: #1c1c1c;
+  --dark2: #454545;
+  --light_white: #f9f9f9;
+  --primary_color: #1351d8;
+  --primary_color2: #4f8dff;
+  --primary_light: #f3f6fd;
+  --primary_light2: rgb(19 81 216 / 10%);
+  --gray: #d9d9d9;
+  --font_syne: "Syne", sans-serif;
+  --font_yantramanv: "Yantramanav", sans-serif;
+  --font_dm: "DM Sans", sans-serif;
+  --yellow_color: #ffd600;
+}
