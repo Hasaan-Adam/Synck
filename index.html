@@ -10,8 +10,11 @@
     <title>Synck - New IT Services and Business Consulting HTML5 Template</title>
 
     <!-- ========== Stylesheets ========== -->
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="assets/css/plugin/swiper-bundle.min.css">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive Custom CSS -->
@@ -19,16 +22,514 @@
 </head>
 
 <body>
+    <!-- Header Bar -->
+    <div class="header-bar">
+        <div class="custom-container">
+            <div class="header-bar-body align-items-center justify-content-between d-flex">
+                <div class="left">
+                    <select class="country-select" name="country" id="country">
+                        <option value="en">EN</option>
+                        <option value="uk">UK</option>
+                        <option value="dz">DZ</option>
+                    </select>
+                </div>
+                <div class="right">
+                    <p>Level up your business with
+                        <a href="about.html" data-word="SYNCK." id="dataWord">SYNCK.</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Heder Bar End -->
 
+    <!-- Header -->
+    <header class="header-area">
+        <div class="custom-container">
+            <div class="custom-row align-items-center justify-content-between">
+                <div class="header-left d-flex align-items-center">
+                    <a href="./index.html" class="logo">
+                        <img src="assets/images/logo/logo.svg" alt="Logo" />
+                    </a>
+                    <div class="header-left-right">
+                        <a href="contact.html" class="theme-btn">Contact Us</a>
+                        <span class="menu-bar">
+                            <i class="las la-bars"></i>
+                        </span>
+                    </div>
+                    <nav class="navbar-wrapper">
+                        <span class="close-menu-bar">
+                            <i class="las la-times"></i>
+                        </span>
+                        <ul>
+                            <li class="dropdown-menu-item">
+                                <a href="index.html">Home</a>
+                                <span class="dropdown-menu-item-icon">
+                                    <i class="las la-angle-down"></i>
+                                </span>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="./index.html">IT Services</a>
+                                    </li>
+                                    <li>
+                                        <a href="./home2.html">Business Consulting</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="company.html">Company</a>
+                                <span class="dropdown-menu-item-icon">
+                                    <i class="las la-angle-down"></i>
+                                </span>
+                                <div class="mega-menu mega-menu-company">
+                                    <div class="mega-menu-inner">
+                                        <div class="custom-container d-flex">
+                                            <div class="left">
+                                                <div class="mega-menu-link-wrap d-flex justify-content-between">
+                                                    <div class="mega-menu-link">
+                                                        <h3>Get Started</h3>
+                                                        <ul>
+                                                            <li><a href="#">Setup 101</a></li>
+                                                            <li><a href="#">Adding users</a></li>
+                                                            <li><a href="#">Video tutorials</a></li>
+                                                            <li><a href="#">Libraries and SDKs</a></li>
+                                                            <li><a href="#">Plugins</a></li>
+                                                            <li><a href="#">Templates</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <div class="mega-menu-links d-flex">
+                                                        <div class="mega-menu-link">
+                                                            <h3>Company</h3>
+                                                            <ul>
+                                                                <li><a href="about.html">About Us</a></li>
+                                                                <li><a href="partner.html">Partners</a></li>
+                                                                <li><a href="career.html">Careers</a></li>
+                                                                <li><a href="event.html">Events</a></li>
+                                                                <li><a href="team.html">Team</a></li>
+                                                                <li><a href="blog.html">Blog</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-link">
+                                                            <h3>Product</h3>
+                                                            <ul>
+                                                                <li><a href="overview.html">Overview</a></li>
+                                                                <li><a href="pricing.html">Pricing</a></li>
+                                                                <li><a href="feature.html">Features</a></li>
+                                                                <li><a href="case-studie.html">Case Studies</a></li>
+                                                                <li><a href="new-release.html">New Releases</a></li>
+                                                                <li><a href="solution.html">Solutions</a></li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-link">
+                                                            <h3>Legal</h3>
+                                                            <ul>
+                                                                <li><a href="#">Licenses</a></li>
+                                                                <li><a href="#">Settings</a></li>
+                                                                <li><a href="#">Cookies</a></li>
+                                                                <li><a href="#">Document</a></li>
+                                                                <li><a href="#">Terms</a></li>
+                                                                <li><a href="#">Privacy</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
+                                                    <ul class="mega-menu-social d-flex align-items-center">
+                                                        <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                                                    </ul>
+
+                                                    <p>Looking for new career? <a href="career.html">We're hiring</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="mega-menu-ads">
+                                                    <img src="assets/images/header/iphone-13-1.jpg" alt="Iphone" />
+                                                    <h2>Solution in your hand</h2>
+                                                    <p>Develop IT solutions based on the<br> analysis phase.</p>
+                                                    <a href="case-studie-single.html">View more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="portfolio.html">Portfolio</a>
+                                <span class="dropdown-menu-item-icon">
+                                    <i class="las la-angle-down"></i>
+                                </span>
+                                <div class="mega-menu mega-menu-portfolio">
+                                    <div class="mega-menu-inner">
+                                        <div class="custom-container d-flex">
+                                            <div class="left">
+                                                <div
+                                                    class="mega-menu-link-wrap d-flex align-items-start justify-content-between">
+                                                    <div class="mega-menu-portfolio-card">
+                                                        <div class="img-box">
+                                                            <img src="assets/images/header/portfolio-mega-menu-1.jpg"
+                                                                alt="Portfolio" />
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <h3><a href="portfolio-details.html">E-commerce</a></h3>
+                                                            <p>we undertook a project to <br>migrate their existing.
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu-portfolio-card">
+                                                        <div class="img-box">
+                                                            <img src="assets/images/header/portfolio-mega-menu-2.jpg"
+                                                                alt="Portfolio" />
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <h3><a href="portfolio-details.html">App Development</a>
+                                                            </h3>
+                                                            <p>The mobile application has <br>significantly
+                                                                improved.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu-portfolio-card">
+                                                        <div class="img-box">
+                                                            <img src="assets/images/header/portfolio-mega-menu-3.jpeg"
+                                                                alt="Portfolio" />
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <h3><a href="portfolio-details.html">SAAS Integration</a>
+                                                            </h3>
+                                                            <p>We partnered with DEF to <br>upgrade their outdated
+                                                                IT.</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mega-menu-portfolio-card">
+                                                        <div class="img-box">
+                                                            <img src="assets/images/header/portfolio-mega-menu-4.jpeg"
+                                                                alt="Portfolio" />
+                                                        </div>
+                                                        <div class="content-box">
+                                                            <h3><a href="portfolio-details.html">Virtual Reality</a>
+                                                            </h3>
+                                                            <p>Enter into the virtual reality <br>
+                                                                world for real experience.</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
+                                                    <ul class="mega-menu-social d-flex align-items-center">
+                                                        <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                                                    </ul>
+
+                                                    <p>
+                                                        <a href="portfolio.html">View Portfolio <i
+                                                                class="iconoir-arrow-up-right"></i></a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="mega-menu-ads">
+                                                    <img src="assets/images/header/macbook.jpg" alt="iPad" />
+                                                    <h2>Mobile app for a new era</h2>
+                                                    <p>Download slack in your mobile for <br>
+                                                        your daily usage.</p>
+                                                    <a href="case-studie-single.html">View more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="mega-menu-item">
+                                <a href="service.html">Services</a>
+                                <span class="dropdown-menu-item-icon">
+                                    <i class="las la-angle-down"></i>
+                                </span>
+                                <div class="mega-menu">
+                                    <div class="mega-menu-inner">
+                                        <div class="custom-container d-flex">
+                                            <div class="left">
+                                                <div
+                                                    class="mega-menu-link-wrap d-flex align-items-start justify-content-between">
+                                                    <div class="mega-menu-service-cards align-items-start">
+                                                        <div class="mega-menu-service-card">
+                                                            <span class="icon">
+                                                                <img src="assets/images/header/hwd-icon-1.svg"
+                                                                    alt="Service" />
+                                                            </span>
+                                                            <div class="content">
+                                                                <h2><a href="how-we-do-single.html">Brainstroming</a>
+                                                                </h2>
+                                                                <p>Ideas</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-menu-service-card">
+                                                            <span class="icon">
+                                                                <img src="assets/images/header/hwd-icon-4.svg"
+                                                                    alt="Service" />
+                                                            </span>
+                                                            <div class="content">
+                                                                <h2><a href="how-we-do-single.html">Product</a></h2>
+                                                                <p>Design</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-menu-service-card">
+                                                            <span class="icon">
+                                                                <img src="assets/images/header/hwd-icon-2.svg"
+                                                                    alt="Service" />
+                                                            </span>
+                                                            <div class="content">
+                                                                <h2><a href="how-we-do-single.html">SEO</a></h2>
+                                                                <p>Optimization</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="mega-menu-service-card">
+                                                            <span class="icon">
+                                                                <img src="assets/images/header/hwd-icon-3.svg"
+                                                                    alt="Service" />
+                                                            </span>
+                                                            <div class="content">
+                                                                <h2><a href="how-we-do-single.html">Front-End</a></h2>
+                                                                <p>Development</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mega-menu-links d-flex">
+                                                        <div class="mega-menu-link">
+                                                            <h3>Services</h3>
+                                                            <ul>
+                                                                <li><a href="service-details.html">Development</a></li>
+                                                                <li><a href="service-details.html">Web Design</a></li>
+                                                                <li><a href="service-details.html">IT Support</a></li>
+                                                                <li><a href="service-details.html">E-Commerce</a></li>
+                                                                <li><a href="service-details.html">Cloud Things</a></li>
+                                                                <li><a href="service-details.html">CRM Solutions</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="mega-menu-link">
+                                                            <h3>Our Fields</h3>
+                                                            <ul>
+                                                                <li><a href="our-field-details.html">Healthcare</a></li>
+                                                                <li><a href="our-field-details.html">Banks</a></li>
+                                                                <li><a href="our-field-details.html">Logistics</a></li>
+                                                                <li><a href="our-field-details.html">Supermarkets</a>
+                                                                </li>
+                                                                <li><a href="our-field-details.html">Industries</a></li>
+                                                                <li><a href="our-field-details.html">Hotels</a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div
+                                                    class="mega-meu-footer d-flex align-items-center justify-content-between w-full">
+                                                    <ul class="mega-menu-social d-flex align-items-center">
+                                                        <li><a href="#"><i class="iconoir-dribbble"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-twitter"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-instagram"></i></a></li>
+                                                        <li><a href="#"><i class="iconoir-linkedin"></i></a></li>
+                                                    </ul>
+
+                                                    <p>Looking for new career? <a href="career.html">We're hiring</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="right">
+                                                <div class="mega-menu-ads">
+                                                    <img src="assets/images/header/ipad.jpg" alt="iPad" />
+                                                    <h2>Our product hits</h2>
+                                                    <p>Our new best IT product of the <br>year 2023.</p>
+                                                    <a href="case-studie-single.html">View more</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="faq.html">FAQ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-right">
+                    <div class="header-contact-info d-flex align-items-center">
+                        <div class="phone-number">
+                            <a href="tel:+1-938-740-7555">
+                                Call Us
+                                <i class="iconoir-arrow-up-right"></i>
+                            </a>
+                            +1-938-740-7555
+                        </div>
+                        <a href="contact.html" class="theme-btn">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero -->
+    <section class="hero-empowerment-area">
+        <div class="custom-container">
+            <div class="custom-row align-items-center">
+                <div class="hero-empowerment-left-content">
+                    <h5 class="section-subtitle">EMPOWERMENT</h5>
+                    <h1 class="section-title fade-in">Seamless IT for your business, boosting your growth.</h1>
+                    <p>We provide the expertise and support to propel your
+                        business forward in the digital landscape.</p>
+                    <div class="btns-group d-flex">
+                        <a href="#" class="theme-btn">Learn More</a>
+                        <a href="contact.html" class="theme-btn2">Let's Talk
+                            <i class="iconoir-arrow-up-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-empowerment-right-content">
+                    <div class="top-content">
+                        <img class="desktop fade-in" src="assets/images/hero/bg1-1.png" alt="Empowerment" />
+                        <img class="mobile" src="assets/images/hero/bg1.png" alt="Empowerment" />
+                        <div class="experience-box simple-shadow bounce-in">
+                            <div class="experience-body d-flex align-items-center">
+                                <img src="assets/images/hero/icon1.svg" alt="Icon" />
+
+                                <div class="experience-content d-flex align-items-center">
+                                    <h1>+8</h1>
+                                    <p>
+                                        Years
+                                        <span>Experience</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bottom-content d-flex">
+                        <a href="./team.html" class="our-expert-team-box simple-shadow bounce-in delay-2">
+                            <div class="our-expert-team-box-inner d-flex align-items-center">
+                                <div class="imgs imgs1 d-flex align-items-center">
+                                    <img src="assets/images/hero/small-img-4.png" alt="team" />
+                                    <img src="assets/images/hero/small-img-3.png" alt="team" />
+                                    <img src="assets/images/hero/small-img-2.png" alt="team" />
+                                    <img src="assets/images/hero/small-img-1.png" alt="team" />
+                                </div>
+                                <p>
+                                    Meet
+                                    <span>Our Experts</span>
+                                </p>
+                            </div>
+                        </a>
+                        <div class="google-reviews-box simple-shadow bounce-in delay-3">
+                            <div class="left">
+                                <span>Verified by</span>
+                                <img src="assets/images/hero/icon2.svg" alt="Google" />
+                            </div>
+                            <div class="right">
+                                <div class="stars d-flex align-items-center">
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                    <i class="las la-star"></i>
+                                </div>
+                                <p>
+                                    3245
+                                    <span>Reviews</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Client -->
+    <section class="client-area">
+        <div class="clients clients-marquee d-flex align-items-center">
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo1.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo2.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo3.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo4.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo5.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo6.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo7.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo8.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo9.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo10.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo11.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo12.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo13.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo14.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo15.svg" alt="Client" />
+            </div>
+            <div class="client-logo simple-shadow">
+                <img src="assets/images/client/client-logo16.svg" alt="Client" />
+            </div>
+            <div class="client-logo" style="min-width: 0;"></div>
+        </div>
+    </section>
+    <!-- Client End -->
 
 
     <!-- ========== jQuery Frameworks ========== -->
-    <!-- Bootstrap JS -->
-    <script src="assets/js/plugin/bootstrap.bundle.min.js"></script>
     <!-- JQUERY JS -->
     <script src="assets/js/vendor/jquery-3.7.0.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="assets/js/plugin/bootstrap.bundle.min.js"></script>
+    <!-- GSAP JS -->
+    <script src="assets/js/plugin/gsap.min.js"></script>
+    <!-- Draggable JS -->
+    <script src="assets/js/plugin/Draggable.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="assets/js/plugin/swiper-bundle.min.js"></script>
+    <!-- Client Marquee JS -->
+    <script src="assets/js/plugin/client-marquee.js"></script>
     <!-- Custom Js -->
     <script src="assets/js/script.js"></script>
+    <!-- Form1 Js -->
+    <script src="assets/js/plugin/form1.js"></script>
+    <!-- Subscriber Form Js -->
+    <script src="assets/js/plugin/subscribe-form.js"></script>
 
 </body>
 
