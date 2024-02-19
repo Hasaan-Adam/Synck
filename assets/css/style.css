@@ -366,7 +366,7 @@ img {
 }
 
 .header-bar-white .country-select {
-  background-image: url(../imgs/caret-black.svg);
+  background-image: url(../images/header/caret-black.svg);
 }
 
 .header-bar .header-bar-body .right p {
@@ -1121,7 +1121,7 @@ img {
 
 .header-2 .navbar-wrapper .country-select {
   color: var(--dark1);
-  background-image: url(../imgs/caret-black.svg);
+  background-image: url(../images/header/caret-black.svg);
 }
 
 .header-2 .navbar-wrapper ul li .dropdown-menu {
@@ -1474,3 +1474,198 @@ img {
     margin-bottom: 60px;
 }
 /* Client End */
+
+/* How-We-Do */
+.how-we-do-area {
+    padding-top: 95px;
+}
+
+.how-we-do-area .custom-row .how-we-do-bg {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    bottom: 0;
+}
+
+.how-we-do-area .custom-container > .custom-row {
+    background: var(--dark1);
+    border-radius: 10px;
+    padding: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.how-we-do-area .how-we-do-left-content {
+    flex: none;
+    width: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.how-we-do-area .how-we-do-left-content .top .section-title {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -2px;
+    margin-bottom: 13px;
+}
+
+.how-we-do-area .how-we-do-left-content .top .section-subtitle {
+    margin-bottom: 20px;
+    color: var(--primary_color2);
+}
+
+.how-we-do-area .how-we-do-left-content .top p {
+    color: #ffffff;
+    opacity: 0.8;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0;
+}
+
+.how-we-do-area .how-we-do-right-content {
+    flex: 1;
+    padding: 20px 0;
+}
+
+.how-we-do-area .how-we-do-left-content .theme-btn::before,
+.how-we-do-area .how-we-do-left-content .theme-btn::after {
+    background: #ffffff;
+}
+
+.how-we-do-area .how-we-do-left-content .theme-btn:hover {
+    color: var(--dark1);
+}
+
+.how-we-do-area .how-we-do-left-content .theme-btn:hover svg path {
+    fill: var(--dark1);
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items {
+    gap: 100px;
+}
+
+.how-we-do-card {
+    display: flex;
+    align-items: center;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 15px 32px 15px 15px;
+    gap: 26px;
+    position: relative;
+    min-width: 255px;
+}
+
+.how-we-do-card .how-we-do-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: none;
+    background: var(--primary_light2);
+}
+
+.how-we-do-card .how-we-do-content {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.how-we-do-card .how-we-do-content h4 {
+    color: var(--primary_color);
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.how-we-do-card .how-we-do-content p {
+    margin: 0;
+    color: rgb(28 28 28 / 85%);
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items + .how-we-do-items {
+    margin-top: 80px;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items .how-we-do-card .circle-shape {
+    position: absolute;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #ffffff;
+    top: 50%;
+    margin-top: -10px;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items .how-we-do-card .circle-shape:before {
+    content: '';
+    border-radius: 50%;
+    background: var(--primary_color);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:first-child .how-we-do-card:first-child .circle-shape {
+    display: none;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items .how-we-do-card .line-shape {
+    position: absolute;
+    background-image: url(../images/how-we-do/linenew.png);
+    background-repeat: no-repeat;
+    height: 1px;
+    width: 268px;
+    background-size: cover;
+    z-index: -1;
+    right: -100px;
+    top: 50%;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:nth-child(2) .how-we-do-card + .how-we-do-card .line-shape {
+    right: auto;
+    left: -100px;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:first-child .how-we-do-card:last-child .line-shape {
+    height: 181px;
+    /* border-right: 1px dashed #ffffff;
+    border-bottom: 1px dashed #ffffff;
+    border-radius: 0 30px 30px 0; */
+    background-image: url(../images/how-we-do/linenew2.png);
+    background-repeat: round;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:nth-child(2) .how-we-do-card:first-child .line-shape {
+    background-image: url(../images/how-we-do/dashed-line.svg);
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:nth-child(2) .how-we-do-card:first-child .line-shape {
+    right: auto;
+    left: -84px;
+    background-image: url(../images/how-we-do/linenew3.png);
+    background-repeat: round;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:nth-child(2) .how-we-do-card:first-child .line-shape {
+    height: 181px;
+    /* border-bottom: 1px dashed #ffffff;
+    border-left: 1px dashed #ffffff;
+    border-radius: 30px 0 0 30px; */
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:nth-child(2) .how-we-do-card .circle-shape {
+    left: auto;
+    right: -10px;
+}
+
+.how-we-do-area .how-we-do-right-content .how-we-do-items:last-child .how-we-do-card .line-shape {
+    display: none;
+}
+/* How-We-Do End */
